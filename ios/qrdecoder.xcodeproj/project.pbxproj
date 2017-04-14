@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4A71F81A1BFDBCD300B59065 /* react_native_qr_decoder.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4A71F8191BFDBCD300B59065 /* react_native_qr_decoder.h */; };
-		4A71F81C1BFDBCD300B59065 /* react_native_qr_decoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A71F81B1BFDBCD300B59065 /* react_native_qr_decoder.m */; };
+		4A71F81A1BFDBCD300B59065 /* RCTQrDecoder.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4A71F8191BFDBCD300B59065 /* RCTQrDecoder.h */; };
+		4A71F81C1BFDBCD300B59065 /* RCTQrDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A71F81B1BFDBCD300B59065 /* RCTQrDecoder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,7 +18,7 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				4A71F81A1BFDBCD300B59065 /* react_native_qr_decoder.h in CopyFiles */,
+				4A71F81A1BFDBCD300B59065 /* RCTQrDecoder.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -26,8 +26,8 @@
 
 /* Begin PBXFileReference section */
 		4A71F8161BFDBCD300B59065 /* libqrdecoder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libqrdecoder.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		4A71F8191BFDBCD300B59065 /* react_native_qr_decoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = react_native_qr_decoder.h; sourceTree = "<group>"; };
-		4A71F81B1BFDBCD300B59065 /* react_native_qr_decoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = react_native_qr_decoder.m; sourceTree = "<group>"; };
+		4A71F8191BFDBCD300B59065 /* RCTQrDecoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTQrDecoder.h; sourceTree = "<group>"; };
+		4A71F81B1BFDBCD300B59065 /* RCTQrDecoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTQrDecoder.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +44,7 @@
 		4A71F80D1BFDBCD300B59065 = {
 			isa = PBXGroup;
 			children = (
-				4A71F8181BFDBCD300B59065 /* react-native-qr-decoder */,
+				4A71F8181BFDBCD300B59065 /* qr-decoder */,
 				4A71F8171BFDBCD300B59065 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,12 +57,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4A71F8181BFDBCD300B59065 /* react-native-qr-decoder */ = {
+		4A71F8181BFDBCD300B59065 /* qr-decoder */ = {
 			isa = PBXGroup;
 			children = (
-				4A71F8191BFDBCD300B59065 /* react_native_qr_decoder.h */,
-				4A71F81B1BFDBCD300B59065 /* react_native_qr_decoder.m */,
+				4A71F8191BFDBCD300B59065 /* RCTQrDecoder.h */,
+				4A71F81B1BFDBCD300B59065 /* RCTQrDecoder.m */,
 			);
+			name = "qr-decoder";
 			path = "react-native-qr-decoder";
 			sourceTree = "<group>";
 		};
@@ -122,7 +123,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A71F81C1BFDBCD300B59065 /* react_native_qr_decoder.m in Sources */,
+				4A71F81C1BFDBCD300B59065 /* RCTQrDecoder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

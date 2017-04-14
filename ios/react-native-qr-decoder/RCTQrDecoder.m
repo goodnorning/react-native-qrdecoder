@@ -1,13 +1,13 @@
 
 
-#import "react_native_qr_decoder.h"
+#import "RCTQrDecoder.h"
 #import <UIKit/UIKit.h>
-#import "RCTBridge.h"
-#import "RCTLog.h"
-#import "RCTUtils.h"
-#import "RCTEventDispatcher.h"
+#import <React/RCTBridge.h>
+#import <React/RCTLog.h>
+#import <React/RCTUtils.h>
+#import <React/RCTEventDispatcher.h>
 
-@implementation React_native_qr_decoder
+@implementation RCTQrDecoder
 
 RCT_EXPORT_MODULE();
 
@@ -30,7 +30,7 @@ RCT_EXPORT_METHOD(get:(NSString *)path callback:(RCTResponseSenderBlock)callback
 	CIDetector *detector = [CIDetector detectorOfType:CIDetectorTypeQRCode context:nil options:detectorOptions];
 	CIImage *image = [CIImage imageWithCGImage:srcImage.CGImage];
 	NSArray *features = [detector featuresInImage:image];
-    NSLog(@"Feature size: %d", features.count);
+    NSLog(@"Feature size: %lu", (unsigned long)features.count);
     if (0==features.count){
         NSLog(@"PROBLEM! Feature size is zero!\n");
         callback(@[RCTMakeError(@"Feature size is zero!", nil, nil)]);

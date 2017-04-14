@@ -1,17 +1,15 @@
 
-var QRDecoder = require('NativeModules').React_native_qr_decoder;
+'use strict';
 
-var path = "your qr code full path";
+import {NativeModules, Platform } from 'react-native';
+var qrdecoder = NativeModules.QrDecoder;
 
-// From local File
-QRDecoder.get(path, (error, qrcode) => {
-    console.log(qrcode);
-    if (error) {
-      console.log(error);
-      return
-    } else {
-      console.log(qrcode);
+class QRDecoder {
+	get(path,callback) {
+		qrdecoder.get(path, (error, qrcode) => {
+		    callback(error,qrcode)
+		})	
+	}
+}
 
-      // this.setState({qrcode: qrcode});
-    }
-});
+module.exports = QRDecoder;
