@@ -1,0 +1,23 @@
+{
+  "name": "react-native-qrdecoder",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/goodnorning/react-native-qrdecoder.git"
+  },
+  "version": "0.1.0",
+  "description": "react native qrcode decorder from local image file.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "qrcode",
+    "react",
+    "decoder",
+    "local",
+    "image",
+    "camera"
+  ],
+  "author": "goodnorning",
+  "license": "MIT"
+}
