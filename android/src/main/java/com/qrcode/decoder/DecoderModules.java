@@ -33,6 +33,7 @@ public class DecoderModules extends ReactContextBaseJavaModule {
             protected void onPostExecute(Result result) {
                 if(result == null){
                     callback.invoke(-1,"error");
+                    return;
                 }
                 if (TextUtils.isEmpty(result.getText())) {
                     //Toast.makeText(TestGeneratectivity.this, errorTip, Toast.LENGTH_SHORT).show();
